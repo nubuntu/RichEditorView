@@ -323,10 +323,19 @@ import UIKit
     public func insertHr() {
         runJS("RE.insertHr();")
     }
+
+    public func insertText(_ text: String) {
+        runJS("RE.insertText('\(text.escaped)');")
+    }
     
     public func insertImage(_ url: String, alt: String) {
         runJS("RE.prepareInsert();")
         runJS("RE.insertImage('\(url.escaped)', '\(alt.escaped)');")
+    }
+    
+    public func insertImageBase64(_ base64String: String, alt: String) {
+        runJS("RE.prepareInsert();")
+        runJS("RE.insertImageBase64('\(base64String.escaped)', '\(alt.escaped)');")
     }
     
     public func insertLink(_ href: String, title: String) {

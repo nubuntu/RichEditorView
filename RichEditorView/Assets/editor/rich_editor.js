@@ -237,6 +237,11 @@ RE.insertHr = function(url, alt) {
     RE.callback("input");
 };
 
+RE.insertText = function(text) {
+    RE.insertHTML(text);
+    RE.callback("input");
+};
+
 RE.insertImage = function(url, alt) {
     var img = document.createElement('img');
     img.setAttribute("src", url);
@@ -246,6 +251,17 @@ RE.insertImage = function(url, alt) {
     RE.insertHTML(img.outerHTML);
     RE.callback("input");
 };
+
+RE.insertImageBase64 = function(base64String, alt) {
+    var img = document.createElement('img');
+    img.setAttribute("src", "data:image/png;base64, " + base64String);
+    img.setAttribute("alt", alt);
+    img.onload = RE.updateHeight;
+    
+    RE.insertHTML(img.outerHTML);
+    RE.callback("input");
+};
+
 
 RE.setBlockquote = function() {
     document.execCommand('formatBlock', false, '<blockquote>');
