@@ -390,7 +390,7 @@
 					};
 					FBA6AB031AD3EC9F00721644 = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = XATA46WWFJ;
+						DevelopmentTeam = MUBKDQEKVF;
 						LastSwiftMigration = 0800;
 					};
 				};
@@ -649,7 +649,7 @@
 		FBA6AB131AD3EC9F00721644 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = XATA46WWFJ;
+				DEVELOPMENT_TEAM = MUBKDQEKVF;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -665,7 +665,7 @@
 		FBA6AB141AD3EC9F00721644 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = XATA46WWFJ;
+				DEVELOPMENT_TEAM = MUBKDQEKVF;
 				INFOPLIST_FILE = RichEditorViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cjwirth.$(PRODUCT_NAME:rfc1034identifier)";
